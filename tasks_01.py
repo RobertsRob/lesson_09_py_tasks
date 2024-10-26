@@ -36,6 +36,20 @@ plt.show()
 
 # 3.task
 
+
+years = [2000, 2005, 2010, 2015, 2020, 2023]
+debt = [5.67, 7.93, 13.56, 18.15, 26.95, 33.04]
+
+plt.plot(years, debt, marker='o', linestyle='-', color='purple', label="Внешний долг США")
+plt.title("Рост внешнего долга США по годам")
+plt.xlabel("Год")
+plt.ylabel("Внешний долг (триллионы USD)")
+plt.grid(True, linestyle='--', color='gray', linewidth=0.5)
+plt.legend()
+
+plt.show()
+
+
 # 4.task
 
 # 5.task
