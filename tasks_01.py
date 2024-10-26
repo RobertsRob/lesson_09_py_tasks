@@ -20,7 +20,18 @@ plt.show()
 x = np.linspace(0, 60, 13)
 # Ось Y — Температура спутника (в градусах Цельсия)
 y = np.array([-120, -100, -60, 20, 80, 120, 130, 120, 80, 20, -60, -100, -120])
+# task_1_01.png
 
+x = np.linspace(0, 60, 13)
+y = np.array([-120, -100, -60, 20, 80, 120, 130, 120, 80, 20, -60, -100, -120])
+
+plt.plot(x, y, marker="s", linestyle="-", color="blue", label="temperature")
+
+plt.title("Температура спутника на орбите")
+plt.xlabel("Время (минуты)")
+plt.ylabel("Температура (°C)")
+plt.grid(True, linestyle="--", color="grey", linewidth=0.9)
+plt.show()
 
 
 # 3.task
