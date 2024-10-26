@@ -53,6 +53,4 @@ plt.legend()
 plt.show()
 
 
-# 4.task
 
-# 5.task
