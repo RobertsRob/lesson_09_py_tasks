@@ -114,3 +114,26 @@ plt.show()
 
 
 # 6.task
+# Создайте линейный график, показывающий процент людей с высшим образованием в Латвии, Литве и Эстонии за последние 5 лет.
+years = np.array([2019, 2020, 2021, 2022, 2023])
+latvia_education = np.array([36, 37, 38, 39, 40])
+lithuania_education = np.array([40, 41, 42, 43, 44])
+estonia_education = np.array([45, 46, 47, 48, 49])
+
+years = np.array([2019, 2020, 2021, 2022, 2023])
+latvia_education = np.array([36, 37, 38, 39, 40])
+lithuania_education = np.array([40, 41, 42, 43, 44])
+estonia_education = np.array([45, 46, 47, 48, 49])
+
+plt.figure(figsize=(10, 6), facecolor='lightblue')
+plt.plot(years, latvia_education, marker='o', linestyle='-', color='blue', label='Латвия')
+plt.plot(years, lithuania_education, marker='s', linestyle='--', color='green', label='Литва')
+plt.plot(years, estonia_education, marker='^', linestyle=':', color='orange', label='Эстония')
+
+plt.title("Уровень образования в странах Балтии (2019-2023)", fontsize=16, fontweight='bold')
+plt.xlabel("Год", fontsize=12)
+plt.ylabel("Процент с высшим образованием (%)", fontsize=12)
+plt.grid(True, linestyle='--', color='gray', linewidth=0.8)
+plt.legend()
+plt.tight_layout()
+plt.show()
