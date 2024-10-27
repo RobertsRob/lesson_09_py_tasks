@@ -16,6 +16,20 @@ plt.show()
 
 
 # 2.task
+# Постройте круговую диаграмму для распределения ИТ-рынка на пять ключевых сегментов.
+labels = ['Computer equipment', 'Telecomunications services', 'Software', 'Tech outcourcing and hardware maintence', 'Comunications equipment', 'Tech consulting and systems integration services']
+sizes = [369, 602, 634, 503, 332, 573]
+
+labels = ['Computer equipment', 'Telecomunications services', 'Software', 'Tech outcourcing and hardware maintence', 'Comunications equipment', 'Tech consulting and systems integration services']
+sizes = [369, 602, 634, 503, 332, 573]
+
+plt.figure(figsize=(10, 5))
+plt.pie(sizes, labels=labels, autopct='%1.2f%%', startangle=140)
+plt.title('Market Share of Major IT Companies')
+plt.axis('equal')
+plt.tight_layout()
+plt.show()
+
 
 # 3.task
 
