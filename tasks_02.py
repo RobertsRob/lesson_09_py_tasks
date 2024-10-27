@@ -88,5 +88,29 @@ plt.show()
 
 
 # 5.task
+# Создайте график, отображающий динамику роста населения в трех странах: Латвия, Литва и Эстония за последние 10 лет.
+years = np.arange(2013, 2023)
+latvia_population = np.array([1.9, 1.9, 1.88, 1.87, 1.87, 1.86, 1.85, 1.84, 1.83, 1.82])
+lithuania_population = np.array([2.9, 2.91, 2.92, 2.93, 2.94, 2.95, 2.96, 2.97, 2.98, 2.99])
+estonia_population = np.array([1.3, 1.32, 1.33, 1.34, 1.35, 1.36, 1.37, 1.38, 1.39, 1.4])
+
+years = np.arange(2013, 2023)
+latvia_population = np.array([1.9, 1.9, 1.88, 1.87, 1.87, 1.86, 1.85, 1.84, 1.83, 1.82])
+lithuania_population = np.array([2.9, 2.91, 2.92, 2.93, 2.94, 2.95, 2.96, 2.97, 2.98, 2.99])
+estonia_population = np.array([1.3, 1.32, 1.33, 1.34, 1.35, 1.36, 1.37, 1.38, 1.39, 1.4])
+
+plt.figure(figsize=(10, 6), facecolor='lightgrey')
+plt.plot(years, latvia_population, marker='o', linestyle='-', color='blue', label='Латвия')
+plt.plot(years, lithuania_population, marker='s', linestyle='--', color='green', label='Литва')
+plt.plot(years, estonia_population, marker='^', linestyle='-.', color='orange', label='Эстония')
+
+plt.title("Динамика роста населения (2013-2022)", fontsize=16, fontweight='bold', color='darkblue')
+plt.xlabel("Годы", fontsize=12)
+plt.ylabel("Население (млн)", fontsize=12)
+plt.grid(True, linestyle='--', color='grey', linewidth=0.8)
+plt.legend(loc='best', fontsize=10)
+plt.tight_layout()
+plt.show()
+
 
 # 6.task
