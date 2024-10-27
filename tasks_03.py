@@ -32,6 +32,25 @@ plt.show()
 
 
 # 3.task
+# Постройте график с областями, показывающий диапазон возможных значений силы в физике.
+x = np.linspace(0, 10, 100)
+force_min = 2 * x
+force_max = 4 * x
+
+x = np.linspace(0, 10, 100)
+force_min = 2 * x
+force_max = 4 * x
+
+plt.figure(figsize=(10, 5))
+plt.fill_between(x, force_min, force_max, color='lightblue', alpha=0.5)
+plt.title('Force Range in Physics')
+plt.xlabel('Distance (m)')
+plt.ylabel('Force (N)')
+plt.grid(True)
+plt.tight_layout()
+plt.savefig('force_range.png', dpi=300)
+plt.show()
+
 
 # 4.task
 
