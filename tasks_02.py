@@ -47,6 +47,23 @@ plt.tight_layout()
 plt.show()
 
 # 3.task
+# Исследуйте зависимость первой космической скорости от массы космического тела. Постройте график, который показывает, как изменяется первая космическая скорость при разных значениях массы (например, планет).
+mass = np.array([0.5, 1, 1.5, 2, 2.5])  # Масса в земных массах
+velocity = np.sqrt(9.81 * (mass * 5.972e24) / (6371e3))  # Первая космическая скорость в м/с
+
+mass = np.array([0.5, 1, 1.5, 2, 2.5])
+velocity = np.sqrt(9.81 * (mass * 5.972e24) / (6371e3))
+
+plt.figure(figsize=(10, 6), facecolor='lavender')
+plt.plot(mass, velocity, marker='^', linestyle='-', color='purple', label='Первая космическая скорость')
+plt.title("Зависимость первой космической скорости от массы", fontsize=16, fontweight='bold', color='darkblue')
+plt.xlabel("Масса (в земных массах)", fontsize=12)
+plt.ylabel("Первая космическая скорость (м/с)", fontsize=12)
+plt.grid(True, linestyle=':', color='grey', linewidth=0.7)
+plt.legend(loc='best', fontsize=10)
+plt.tight_layout()
+plt.show()
+
 
 # 4.task
 
