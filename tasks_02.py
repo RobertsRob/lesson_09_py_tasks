@@ -66,6 +66,26 @@ plt.show()
 
 
 # 4.task
+# Постройте график изменения температуры на поверхности планеты в зависимости от времени. Настройте фон графика и добавьте легенду для различных типов температур (дневная, ночная).
+time = np.array([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24])  # Время в часах
+day_temp = np.array([15, 18, 20, 25, 30, 32, 30, 25, 20, 15, 10, 8, 5])  # Дневная температура
+night_temp = np.array([5, 7, 9, 10, 12, 15, 16, 15, 13, 10, 8, 6, 4])  # Ночная температура
+
+time = np.array([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24])
+day_temp = np.array([15, 18, 20, 25, 30, 32, 30, 25, 20, 15, 10, 8, 5])
+night_temp = np.array([5, 7, 9, 10, 12, 15, 16, 15, 13, 10, 8, 6, 4])
+
+plt.figure(figsize=(10, 6), facecolor='lightyellow')
+plt.plot(time, day_temp, marker='o', linestyle='-', color='orange', label='Дневная температура')
+plt.plot(time, night_temp, marker='s', linestyle='--', color='blue', label='Ночная температура')
+plt.title("Изменение температуры в течение суток", fontsize=16, fontweight='bold', color='darkred')
+plt.xlabel("Время (часы)", fontsize=12)
+plt.ylabel("Температура (°C)", fontsize=12)
+plt.grid(True, linestyle='-.', color='grey', linewidth=0.9)
+plt.legend(loc='best', fontsize=10)
+plt.tight_layout()
+plt.show()
+
 
 # 5.task
 
