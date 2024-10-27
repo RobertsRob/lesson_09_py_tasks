@@ -132,6 +132,3 @@ plt.ylabel('Выбросы CO2 (тонн)')
 plt.grid(True)
 plt.tight_layout()
 plt.show()
-
-
-# 7.task
