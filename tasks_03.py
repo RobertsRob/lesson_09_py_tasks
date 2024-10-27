@@ -53,7 +53,24 @@ plt.show()
 
 
 # 4.task
+# Постройте столбчатую диаграмму, показывающую продажи различных категорий электроники.
+categories = ['Смартфоны', 'Ноутбуки', 'Телевизоры', 'Планшеты', 'Наушники']
+sales = [1500, 800, 600, 400, 300]
 
+categories = ['Смартфоны', 'Ноутбуки', 'Телевизоры', 'Планшеты', 'Наушники']
+sales = [1500, 800, 600, 400, 300]
+
+fig, ax = plt.subplots()
+bars = ax.bar(categories, sales, width=0.4, color=['lightcoral', 'sandybrown', 'khaki', 'lightblue', 'orchid'])
+
+ax.set_xlabel('Категории электроники')
+ax.set_ylabel('Продажи (ед.)')
+ax.set_title('Продажи различных категорий электроники')
+ax.grid()
+
+
+plt.tight_layout()
+plt.show()
 # 5.task
 
 # 6.task
